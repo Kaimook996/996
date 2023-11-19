@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <!--- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .header{grid-area:header; background-color:antiquewhite;border: solid 4px violet; 
+          padding:15px; 
+            height:170px; max-width:100%;}
+        .lside{grid-area: lside;background-color: aliceblue;border: solid 3px khaki; 
+              padding:15px; 
+              text-align: left; 
+              height:1800px; max-width: 100%;}
+        .main{grid-area: main;background-color: darkolivegreen;border: solid 3px khaki; 
+           
+              height:1830px;max-width:100%; }
+        .footer{grid-area: footer;background-color: gold; border: solid 3px khaki; 
+              padding:15px; 
+              text-align: center; 
+              height:150px; max-width:100%;}
+        .gridcontainer{
+            display: grid;
+            grid-template-areas:
+            'header header header header header'
+            'lside main main main main'
+            'footer footer footer footer footer';
+           
+            grid-gap:5px;
+            padding:5px;}
+        </style>
+</head>
+<body>
+  <div class="gridcontainer">
+        <div class="header"><header><img src="image/super.jpg" style="width:100%;height:155px;" alt="Logo Picture"></header></div>
+      
+        <div class="lside"><lside>
+            <ul>
+              <li><a href="register.html">สมัครสมาชิกใหม่</a></li>
+            </ul>
+          </lside>
+      </div>
+      <div class="main">
+        <div class="cart-count"></div>
+          <i class="fas fa-cart-plus"></i>
+          </div>
+          <div class="main">
+          <h3>รายการสินค้าทั้งหมด Merlin Online</h3>
+          <form action="https://httpbin.org/post" method="post">
+        <div class="product">
+        <div class="product-items">
+          <img class="pro-img" src="image/milk.png" alt="Yogurt">
+          <p>โยเกิร์ตพร่องมันเนย</p>
+          <p>฿53.00</p>
+          <label for="Yogurt"></label>
+          <input type="checkbox" class="form-control" id="Yogurt" placeholder="โยเกิร์ตพร่องมันเนย" name="โยเกิร์ตพร่องมันเนย">
+          <label for="number"></label>
+          <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number">
+        </div>
+        <div class="product-items">
+          <img class="pro-img" src="image/sam.png" alt="Sam">
+          <p>หมูสามชั้น</p>
+          <p>฿55.00</p>
+          <label for="Sam"></label>
+          <input type="checkbox" class="form-control" id="Sam" placeholder="หมูสามชั้น" name="หมูสามชั้น">
+          <label for="number"></label>
+          <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number">
+        </div>
+        <div class="product-items">
+          <img class="pro-img" src="image/pok.png" alt="pok">
+          <p>หมูบด</p>
+          <p>฿49.00</p>
+          <label for="pok"></label>
+          <input type="checkbox" class="form-control" id="pok" placeholder="หมูบด" name="หมูบด">
+          <label for="number"></label>
+          <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number">
+        </div>
+        <div class="product-items">
+          <img class="pro-img" src="image/hot.png" alt="hot">
+          <p>ไส้กรอกไก่รมควัน</p>
+          <p>฿135.00</p>
+          <label for="hot"></label>
+          <input type="checkbox" class="form-control" id="hot" placeholder="ไส้กรอกไก่รมควัน" name="ไส้กรอกไก่รมควัน">
+          <label for="number"></label>
+          <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number">
+        </div>
+        <div class="product-items">
+          <img class="pro-img" src="image/suki.png" alt="suki">
+          <p>ชุดสุกี้+เห็ด</p>
+          <p>฿69.00</p>
+          <label for="suki"></label>
+          <input type="checkbox" class="form-control" id="suki" placeholder="ชุดสุกี้+เห็ด" name="ชุดสุกี้+เห็ด">
+          <label for="number"></label>
+          <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number">
+        </div>
+        <div class="product-items">
+          <img class="pro-img" src="image/tomato.png" alt="tomato">
+        <p>มะเขือเทศ</p>
+        <p>฿80.00</p>
+        <label for="tomato"></label>
+        <input type="checkbox" class="form-control" id="tomato" placeholder="tomato" name="tomato">
+        <label for="number"></label>
+        <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number">
+        </div>
+        <div class="product-items">
+          <img class="pro-img" src="image/pumkin.png" alt="pumkin">
+          <p>ฟักทองญี่ปุ่น</p>
+          <p>฿100.00</p>
+          <label for="pumkin"></label>
+        <input type="checkbox" class="form-control" id="pumkin" placeholder="ฟักทองญี่ปุ่น" name="ฟักทองญี่ปุ่น">
+        <label for="number"></label>
+        <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number">
+        </div>
+        <div class="product-items">
+          <img class="pro-img" src="image/bread.png" alt="bread">
+            <p>ขนมปังแซนวิช</p>
+            <p>฿42.00</p>
+            <label for="bread"></label>
+        <input type="checkbox" class="form-control" id="bread" placeholder="ขนมปังแซนวิช" name="ขนมปังแซนวิช">
+        <label for="number"></label>
+        <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number">
+        </div>
+        <div class="product-items">
+          <img class="pro-img" src="image/mookin.png" alt="mookin">
+              <p>ลูกชิ้นหมู</p>
+              <p>฿63.00</p>
+              <label for="mookin"></label>
+        <input type="checkbox" class="form-control" id="mookin" placeholder="ลูกชิ้นหมู" name="ลูกชิ้นหมู">
+        <label for="number"></label>
+        <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number">
+        </div>
+        <div class="product-items">
+          <img class="pro-img" src="image/pia.png" alt="kanompia">
+                <p>เปี๊ยะไส้ถั่วไข่เค็ม</p>
+                <p>฿49.00</p>
+                <label for="kanompia"></label>
+        <input type="checkbox" class="form-control" id="kanompia" placeholder="เปี๊ยะไส้ถั่วไข่เค็ม" name="เปี๊ยะไส้ถั่วไข่เค็ม">
+        <label for="number"></label>
+        <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number">
+        </div>
+        <div class="product-items">
+          <img class="pro-img" src="image/sapagetthi.png" alt="sapagetthi">
+                  <p>มักกะโรนีอบชีส</p>
+                  <p>฿79.00</p> 
+                  <label for="sapagetthi"></label>
+        <input type="checkbox" class="form-control" id="sapagetthi" placeholder="เมักกะโรนีอบชีส" name="มักกะโรนีอบชีส">
+        <label for="number"></label>
+        <input type="number" class="form-control" id="number" placeholder="ระบุจำนวน" name="number"><br>
+        <p>
+                  <button type="submit" class="btn btn-primary">Submit</button></p>
+                </form>
+        </div>
+        </div>
+        </div>
+
+        <div class="footer"><footer>
+          <p style="text-align:center;color:palevioletred;font-size: 17px; ;">ที่อยู่และข่องทางการติดต่อ Merlin Shop Store</p>
+          <address style="text-align:center; medium;color: navy;background-color: blanchedalmond; margin-left: 440px; margin-right: 440px; font-size: 15px;">
+          เลขที่ 99 ถนน คลองหนึ่ง ตำบลคลองหลวง อำเภอเมืองภูเก็ต จังหวัดเปทุมธานี 253996<br>
+          Fanpage : Merlin Shop Store <br> 
+          เบอร์โทรศัพท์ : &nbsp&nbsp095-4253996
+          </footer>
+    </div>
+    </div>
+    
+</body>
+</html>
